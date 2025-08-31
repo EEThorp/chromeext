@@ -1,10 +1,13 @@
 {
   "manifest_version": 3,
-  "name": "Web Page Text Extractor",
+  "name": "Web Copycat AI Text Extractor",
   "description": "Extract text from web pages with a simple click",
   "permissions": [
     "activeTab",
     "storage"
+  ],
+  "host_permissions": [
+    "https://api.openai.com/*"
   ],
   "background": {
     "service_worker": "background.bundle.js"
